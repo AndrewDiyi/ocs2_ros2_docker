@@ -11,10 +11,5 @@ if [ -f "/usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash" ]; then
     source "/usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash"
 fi
 
-# Source user workspace overlay if exists
-if [ -f "$HOME/dev_ws/install/setup.bash" ]; then
-    source "$HOME/dev_ws/install/setup.bash"
-fi
-
 # Execute the command (can be overridden by CMD)
 exec "$@"
