@@ -16,3 +16,10 @@ docker build -t ocs2-ros2 --target ocs2 -f Dockerfile .
 ```bash
 ./run_docker.sh
 ```
+
+## Run example
+
+```bash
+source ~/ros2_ws/install/setup.bash
+ros2 launch ocs2_legged_robot_ros legged_robot_ddp.launch.py
+```
